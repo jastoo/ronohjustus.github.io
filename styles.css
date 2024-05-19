@@ -1,0 +1,325 @@
+/* General Styles */
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #321356;
+    color: #fff;
+    line-height: 1.6;
+}
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+/* Header Styles */
+header {
+    background-color: #4b2a7b;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+body.light-theme header {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+.logo {
+    font-family: 'Montserrat', sans-serif; /* Replace with your desired font */
+    font-size: 32px; /* Adjust the font size as needed */
+    font-weight: 700; /* 700 is bold, you can use a value from 100 to 900 */
+    color: #efe8e8; /* Replace with your desired color */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Increase the spacing between letters */
+  }
+  body.light-theme header nav ul li a {
+    color: #000000;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc33;
+}
+body.light-theme header nav ul li a:hover {
+    color: #007acc;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    position: relative;
+}
+body.light-theme #hero {
+    color: #000000;
+}
+
+.intro {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    margin-bottom: 20px;
+}
+
+.intro h1, .intro h2 {
+    margin: 0;
+}
+h2 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ffcc33, #f0e2f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 5s infinite linear;
+  }
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: #e7d9d9;
+    line-height: 1.5;
+  }
+  
+
+.buttons button {
+    background-color: #ffcc33;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #321356;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #ff9933;
+}
+body.light-theme .buttons button {
+    background-color: #007acc;
+    color: #ffffff;
+}
+body.light-theme .buttons button:hover {
+    background-color: #005bb5;
+}
+/* Section Styles */
+section {
+    padding: 2em 0;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+body.light-theme.h2 .p{
+    color: #373434;
+  }
+
+/* Services Section */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+body.light-theme .service-cards .card {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+
+.card {
+    background-color: #4b2a7b;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease;
+    z-index: -1;
+  }
+  .card:hover:before {
+    height: 100%;
+  }
+.card h3 {
+    margin-top: 0;
+    transition: color 0.3s ease;
+    font-size: 20px;
+
+}
+.card:hover h3 {
+    color: #605e5e;
+  }
+  .card p {
+    font-size: 16px;
+    color: #979292;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+  
+  .card:hover p {
+    color: #f4ecec;
+  }
+/* Skills Section */
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-icons i {
+    font-size: 3em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+body.light-theme .skills-icons i {
+    color: #000000;
+}
+
+.skills-icons i:hover {
+    color: #ffcc33;
+}
+
+/* Work Section */
+.work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.work-item {
+    background-color: #4b2a7b;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+body.light-theme .work-item {
+    background-color: #e4e4e4;
+    color: #000000;
+}
+#resume {
+    padding: 2em;
+    text-align: center;
+}
+
+#resume iframe {
+    border: none;
+}
+
+#resume .buttons button {
+    background-color: #ffcc33;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+#resume .buttons button:hover {
+    background-color: #ff9933;
+}
+
+body.light-theme #resume .buttons button {
+    background-color: #007acc;
+    color: #ffffff;
+}
+
+body.light-theme #resume .buttons button:hover {
+    background-color: #005bb5;
+}
+
+/* Blog Section */
+#blog {
+    padding: 2em 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4b2a7b;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+body.light-theme footer {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+footer .contact-info p a {
+    color: #ffcc33;
+}
+
+footer .social-icons a {
+    color: #faf8f7;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+body.light-theme footer .social-icons a {
+    color: #000000;
+}
+footer .social-icons a:hover {
+    color: #ffcc33;
+}
+body.light-theme footer .social-icons a:hover {
+    color: #007acc;
+}

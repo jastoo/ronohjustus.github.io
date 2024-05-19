@@ -1,0 +1,22 @@
+/* Resume Page Styles */
+#resume {
+    padding: 2em;
+    text-align: center;
+}
+
+#resume iframe {
+    border: none;
+}
+
+#resume .buttons button {
+    background-color: #ffcc33;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#resume .buttons button:hover {
+    background-color: #ff9933;
+}
